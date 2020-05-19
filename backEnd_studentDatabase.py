@@ -31,7 +31,7 @@ def addStudentRec(ID , Firstname , Surname , DoB, Branch , Gender ,Father ,Addre
     con = connection()
     con = sqlite3.connect("student.db")
     cur =con.cursor()
-    cur.execute("INSERT INTO student VALUES(?,?,?,?,?,?,?,?,?)",ID , Firstname , Surname , DoB, Branch , Gender ,Father ,Address ,int(Mobile))
+    cur.execute("INSERT INTO student VALUES(?,?,?,?,?,?,?,?,?)",(ID , Firstname , Surname , DoB, Branch , Gender ,Father ,Address ,int(Mobile)))
     con.commit()
     con.close()
     
