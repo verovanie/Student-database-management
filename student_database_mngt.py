@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox
-import sys
 import backEnd_studentDatabase 
 
 #================================= Function ========================================#
