@@ -62,7 +62,7 @@ def search_student() :
 
 def view_student():
     conn = backEnd_studentDatabase.connection()
-    data = backEnd_studentDatabase.viewData
+    data = backEnd_studentDatabase.viewData()
     conn.close()
     for i in data:
         t1.insert(END,str(i)+"\n")        
